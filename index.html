@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>площадь </title>
+</head>
+<body>
+<h3>Вычисление площади квадрата</h3>
+<input type="text" name="" placeholder="Введите длину стороны" id="side">
+<p>Площадь квадрата: </p>
+<input type="text" name="" id="squareArea"><br><br>
+</body>
+<script type="text/javascript">
+//Сделайте калькулятор, который будет находить площадь квадрата.
+let side = document.getElementById('side');
+let squareArea = document.getElementById('squareArea');
+
+side.addEventListener('blur', function() {
+squareArea.value = Math.pow(side.value, 2);
+});
+</script>
+</html>
